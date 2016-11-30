@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="js\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,11 +76,39 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="audio\music1.mp3" />
+    <Content Include="audio\school.mp3" />
+    <Content Include="css\main.css" />
+    <Content Include="index.html" />
+    <Content Include="js\aurora\aac.js" />
+    <Content Include="js\aurora\aurora.js" />
+    <Content Include="js\aurora\flac.js" />
+    <Content Include="js\aurora\mp3.js" />
+    <Content Include="js\aurora\ogg.js" />
+    <Content Include="js\aurora\opus.js" />
+    <Content Include="js\aurora\vorbis.js" />
+    <Content Include="js\circle-player\js\circle.player.js" />
+    <Content Include="js\circle-player\js\jquery.grab.js" />
+    <Content Include="js\circle-player\js\jquery.transform2d.js" />
+    <Content Include="js\circle-player\js\mod.csstransforms.min.js" />
+    <Content Include="js\circle-player\skin\bgr.jpg" />
+    <Content Include="js\circle-player\skin\buffer.png" />
+    <Content Include="js\circle-player\skin\circle.player.css" />
+    <Content Include="js\circle-player\skin\controls.jpg" />
+    <Content Include="js\circle-player\skin\progress.png" />
+    <Content Include="js\circle-player\skin\progress_sprite.jpg" />
+    <Content Include="js\jquery.jplayer.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\popcorn.ie8.js" />
+    <Content Include="js\popcorn.js" />
+    <Content Include="js\popcorn.player.js" />
+    <Content Include="js\popcorn.subtitle.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>The Soundboard</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.jplayer.min.js"></script>
+    <script>
+        var currentTrack = "";
+    </script>
+</head>
+<body>
+    <h1 id="title">The Soundboard</h1>
+    <div id="container" class="clearfix">
+        <div id="sidebar">
+
+        </div>
+        <div id="board">
+            <div onclick="callAudio(this)" class="blue sound-button">music1</div>
+            <div onclick="callAudio(this)" class="blue sound-button">school</div>
+        </div>
+        <div id="jpl"></div>
+    </div>
+    <script>
+        $('#jpl').jPlayer();
+        function callAudio(el) {
+            if (currentTrack != el.innerText) {
+                $('#jpl').jPlayer('setMedia', {
+                    "title": el.innerText,
+                    "m4a": "/audio/" + el.innerText + ".m4a",
+                    "oga": "/audio/" + el.innerText + ".ogg",
+                    "mp3": "/audio/" + el.innerText + ".mp3"
+                });
+                $('#jpl').jPlayer("play");
+                currentTrack = el.innerText;
+            }
+            else {
+                $('#jpl').jPlayer('stop');
+                currentTrack = "";
+            }
+        }
+    </script>
+
+
+</body>
+</html>
